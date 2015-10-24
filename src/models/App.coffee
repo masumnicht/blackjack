@@ -6,7 +6,5 @@ class window.App extends Backbone.Model
     @set 'playerHand', deck.dealPlayer()
     @set 'dealerHand', deck.dealDealer()
     console.log @get('playerHand')
-    
-# class window.Game extends Backbone.model
-#   initialize: ->
-#     @set 
+    @get('playerHand').on 'stand', -> console.log @get('playerHand')
+  
