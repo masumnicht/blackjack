@@ -17,3 +17,4 @@ class window.HandView extends Backbone.View
     else 
       @$('.score').text @collection.scores()[1]
 
+
